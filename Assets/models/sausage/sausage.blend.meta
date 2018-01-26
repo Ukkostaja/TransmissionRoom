@@ -1,10 +1,18 @@
 fileFormatVersion: 2
-guid: 378fd515ca4103a468e3eb035f2f73e6
-timeCreated: 1516992410
+guid: 8a461c34b1708c4469d94bae65d7fe2f
+timeCreated: 1516992013
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2100000: sausage_DIFF__sausage_DIFF
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: sausage
+    7400000: Default Take
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
