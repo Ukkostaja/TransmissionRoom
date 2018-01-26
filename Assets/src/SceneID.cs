@@ -7,6 +7,10 @@ public class SceneID : MonoBehaviour {
 	public int id;
 
 
+	public SceneID(int id) {
+		this.id = id;
+	}
+
 	// Use this for initialization
 	void Start () {
 		
