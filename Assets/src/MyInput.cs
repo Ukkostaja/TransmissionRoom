@@ -22,7 +22,7 @@ public class MyInput : MonoBehaviour {
 			notagain = true;
 			delay = Time.realtimeSinceStartup;
 			GameObject me = this.gameObject;
-			SceneID winner = this.GetComponent<SceneID>;
+			SceneID winner = this.GetComponent<SceneID>();
 			float winnerdistance = float.MaxValue;
 
 			float distance = float.MaxValue;
