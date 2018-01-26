@@ -22,7 +22,7 @@ public class MyInput : MonoBehaviour {
 			notagain = true;
 			delay = Time.realtimeSinceStartup;
 			GameObject me = this.gameObject;
-			SceneID winner = new SceneID (0);
+			SceneID winner = new SceneID(0);
 			float winnerdistance = float.MaxValue;
 
 			float distance = float.MaxValue;
@@ -35,7 +35,7 @@ public class MyInput : MonoBehaviour {
 
 			}
 
-			Debug.Log (distance);
+			//Debug.Log (distance);
 
 			if (distance < 3) {
 				SceneManager.LoadScene (winner.id);
