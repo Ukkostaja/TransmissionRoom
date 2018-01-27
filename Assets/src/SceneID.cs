@@ -5,7 +5,7 @@ using UnityEngine;
 public class SceneID : MonoBehaviour {
 
 	public int id;
-	public bool enabled;
+	public bool available;
 
 
 	// Use this for initialization
