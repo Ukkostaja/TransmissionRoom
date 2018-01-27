@@ -268,6 +268,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1207544763}
   - component: {fileID: 1207544762}
+  - component: {fileID: 1207544761}
   - component: {fileID: 1207544764}
   m_Layer: 0
   m_Name: AudioStream
@@ -276,6 +277,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1207544761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1207544760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f409880404db641489a412cabfdcb983, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offsetfloat: 25000
 --- !u!82 &1207544762
 AudioSource:
   m_ObjectHideFlags: 0
@@ -380,4 +393,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bdf8435039010844bdb064802c89502, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: http://live.rockmelodic-radio.com:2199/tunein/rockmelo.pls
+  url: 
