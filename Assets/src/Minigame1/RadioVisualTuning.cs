@@ -15,14 +15,15 @@ public class RadioVisualTuning : MonoBehaviour {
 		if(RadioNeedle == null || LeftBound == null || RightBound == null) Debug.Log("Not all GameObjects set in Editor");
 	}
 
-	public void Left() {
+	public bool Left() {
 		if (RadioNeedle.transform.localPosition.z + StepLegnth < LeftBound.transform.localPosition.z) {
 			Vector3 newPos= RadioNeedle.transform.localPosition;
 			newPos.z += StepLegnth;
 			RadioNeedle.transform.localPosition = newPos;
 			Tune ();
+			return true;
 		}
-
+		return false;
 	}
 
 
@@ -31,13 +32,15 @@ public class RadioVisualTuning : MonoBehaviour {
 	}
 
 
-	public void Right() {
+	public bool Right() {
 		if (RadioNeedle.transform.localPosition.z - StepLegnth > RightBound.transform.localPosition.z) {
 			Vector3 newPos= RadioNeedle.transform.localPosition;
 			newPos.z -= StepLegnth;
 			RadioNeedle.transform.localPosition = newPos;
 			Tune ();
+			return true;
 		}
+		return false;
 	}
 
 	// Update is called once per frame
