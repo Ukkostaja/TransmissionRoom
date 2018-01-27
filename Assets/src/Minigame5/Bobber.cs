@@ -8,7 +8,7 @@ public class Bobber : MonoBehaviour {
 	public Vector3 target;
 	Vector3 pore;
 	Vector3 liikevektori;
-	public bool active = true;
+	public bool active = false;
 
 	// Use this for initialization
 	void Start () {
@@ -43,6 +43,5 @@ public class Bobber : MonoBehaviour {
 
 	public void Return() {
 		Gogo (pore);
-		active = true;
 	}
 }

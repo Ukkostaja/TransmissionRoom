@@ -24,7 +24,7 @@ public class Kalasta : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown ("Fire1")) {
+		if (Input.GetButtonDown ("Fire1") && koho.active == false) {
 			FishAnim ();
 
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
@@ -39,7 +39,7 @@ public class Kalasta : MonoBehaviour {
 					}
 				} else {
 					koho.Return ();
-					going =!going;
+					going = !going;
 				}
 			}
 
