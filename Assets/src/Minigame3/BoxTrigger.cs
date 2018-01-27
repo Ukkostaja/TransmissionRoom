@@ -31,14 +31,6 @@ public class BoxTrigger : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerStay (Collider col){
-		
-	}
-
-	void OnTriggerLeave (Collider col){
-		
-	}
-
 	bool IsThreeObjectsTriggered(){
 		if (objectsTriggered > 2)
 			return true;
