@@ -8,37 +8,43 @@ public class MirrorObjectDrag : MonoBehaviour {
 	Vector3 mousePosition;
 	Vector3 offsetVector;
 
-	float dragheight;
-	float offset;
+	public float dragheight;
+	public float offset;
 
 	// Use this for initialization
 	void Start () {
-		offset = 5f;
+		offset = 10f;
 		dragObjectPosition = transform.position;
-		dragheight = dragObjectPosition.y;
+		if (dragheight == 0) dragheight = dragObjectPosition.y;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		transform.position = dragObjectPosition;
 		offsetVector = mousePosition - dragObjectPosition;
+
 	}
 
 	void OnMouseDown()
 	{
 		if (Mathf.Abs(offsetVector.x) < offset && Mathf.Abs(offsetVector.y) < offset && Mathf.Abs(offsetVector.z) < offset)
 		{
+			mousePosition = dragObjectPosition;
 			transform.position = new Vector3(mousePosition.x, dragheight, mousePosition.z);
+			dragObjectPosition = transform.position;
 		}
 	}
 
 	void OnMouseDrag()
 	{
 		transform.position = new Vector3 (mousePosition.x, dragheight, mousePosition.z);
+		dragObjectPosition = transform.position;
 	}
 
 	void OnMouseUp()
 	{
 		transform.position = new Vector3 (mousePosition.x, dragheight, mousePosition.z);
+		dragObjectPosition = transform.position;
 	}
 }

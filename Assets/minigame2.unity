@@ -523,7 +523,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &77987197
 MonoBehaviour:
@@ -536,6 +536,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c35629e5fa99e749b8e5939ef3584dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &77987211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 77987192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Center: {x: 1.1, y: 1, z: 1.7}
 --- !u!1 &78772825
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,6 +634,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c35629e5fa99e749b8e5939ef3584dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &90642736
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 90642733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Center: {x: 1.1, y: 1, z: 1.7}
 --- !u!1 &90958064
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +896,11 @@ Prefab:
       propertyPath: m_TagString
       value: Puzzle2Block
       objectReference: {fileID: 0}
+    - target: {fileID: 54454141433014602, guid: 849057ddf7241bc488bcde8c2af6a0e5,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
   m_IsPrefabParent: 0
@@ -1095,6 +1124,11 @@ Prefab:
       propertyPath: m_TagString
       value: Puzzle2Block
       objectReference: {fileID: 0}
+    - target: {fileID: 54454141433014602, guid: 849057ddf7241bc488bcde8c2af6a0e5,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
   m_IsPrefabParent: 0
@@ -1240,7 +1274,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &389080129
 MonoBehaviour:
@@ -1253,6 +1287,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c35629e5fa99e749b8e5939ef3584dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &389080143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 389080124}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Center: {x: 1.1, y: 1, z: 1.7}
 --- !u!1 &528603779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1425,11 @@ Prefab:
     - target: {fileID: 1854260746084458, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
       propertyPath: m_Name
       value: Block1
+      objectReference: {fileID: 0}
+    - target: {fileID: 54454141433014602, guid: 849057ddf7241bc488bcde8c2af6a0e5,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
@@ -1510,6 +1561,11 @@ Prefab:
       propertyPath: m_Name
       value: Mirror_SW_1
       objectReference: {fileID: 0}
+    - target: {fileID: 54529542922430224, guid: fb63d445dcfec22499f27240ba1f3e6c,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114311553341754012, guid: fb63d445dcfec22499f27240ba1f3e6c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: fb63d445dcfec22499f27240ba1f3e6c, type: 2}
@@ -1537,7 +1593,7 @@ Transform:
   m_GameObject: {fileID: 665501076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.765791, y: -0.11354256, z: 2.2080908}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 90958068}
   - {fileID: 563826734}
@@ -1880,6 +1936,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c35629e5fa99e749b8e5939ef3584dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &860372411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 860372392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Center: {x: 1.1, y: 1, z: 1.7}
 --- !u!1 &901217801
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,7 +2177,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &911677040
 MonoBehaviour:
@@ -2122,6 +2190,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c35629e5fa99e749b8e5939ef3584dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &911677054
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 911677035}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Center: {x: 1.1, y: 1, z: 1.7}
 --- !u!1001 &918653081
 Prefab:
   m_ObjectHideFlags: 0
@@ -2168,6 +2248,11 @@ Prefab:
     - target: {fileID: 1854260746084458, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
       propertyPath: m_TagString
       value: Puzzle2Block
+      objectReference: {fileID: 0}
+    - target: {fileID: 54454141433014602, guid: 849057ddf7241bc488bcde8c2af6a0e5,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
@@ -2476,6 +2561,11 @@ Prefab:
       propertyPath: m_TagString
       value: Puzzle2Block
       objectReference: {fileID: 0}
+    - target: {fileID: 54454141433014602, guid: 849057ddf7241bc488bcde8c2af6a0e5,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
   m_IsPrefabParent: 0
@@ -2615,6 +2705,11 @@ Prefab:
       propertyPath: m_TagString
       value: Puzzle2Block
       objectReference: {fileID: 0}
+    - target: {fileID: 54454141433014602, guid: 849057ddf7241bc488bcde8c2af6a0e5,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
   m_IsPrefabParent: 0
@@ -2753,6 +2848,11 @@ Prefab:
     - target: {fileID: 1854260746084458, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
       propertyPath: m_TagString
       value: Puzzle2Block
+      objectReference: {fileID: 0}
+    - target: {fileID: 54454141433014602, guid: 849057ddf7241bc488bcde8c2af6a0e5,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 849057ddf7241bc488bcde8c2af6a0e5, type: 2}
@@ -2988,7 +3088,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1305760000
 MonoBehaviour:
@@ -3001,6 +3101,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c35629e5fa99e749b8e5939ef3584dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1305760014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1305759995}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Center: {x: 1.1, y: 1, z: 1.7}
 --- !u!1 &1408942249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3804,7 +3916,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 116
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &1888021096
 MonoBehaviour:
@@ -3817,6 +3929,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c35629e5fa99e749b8e5939ef3584dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &1888021110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1888021091}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
+  m_Center: {x: 1.1, y: 1, z: 1.7}
 --- !u!1 &1982737893
 GameObject:
   m_ObjectHideFlags: 0
