@@ -8,7 +8,7 @@ public class Bobber : MonoBehaviour {
 	public Vector3 target;
 	Vector3 pore;
 	Vector3 liikevektori;
-	public bool active;
+	public bool active = true;
 
 	// Use this for initialization
 	void Start () {
@@ -18,20 +18,31 @@ public class Bobber : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (active) {
-
+			Vector3 newPos = transform.position + (liikevektori*speed);
+			transform.position = newPos;
+			Vector3 distance = transform.position - target;
+			if (transform.position.y < 0)
+				active = false;
+			if( transform.position.z <pore.z) 
+				active = false;
 		}
+
+
 	}
 
 
-	void Gogo(Vector3 pos) {
-		liikevektori = (pos-gameObject.transform.position)/1000;
+	public void Gogo(Vector3 pos) {
+		liikevektori = (pos-gameObject.transform.position)/600;
+		active = true;
 	}
 
 	public void setPOR(Vector3 POS) {
 		pore = POS;
+		active = true;
 	}
 
-	void Return() {
+	public void Return() {
 		Gogo (pore);
+		active = true;
 	}
 }

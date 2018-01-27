@@ -5,18 +5,18 @@ using UnityEngine;
 public class Kalasta : MonoBehaviour {
 	Animator anim;
 	public GameObject pointOfReturn;
-	Bobber koho;
+	public Bobber koho;
+	bool going= true;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator> ();
-		koho = GetComponentInChildren<Bobber> ();
 		koho.transform.position = pointOfReturn.transform.position;
 		koho.setPOR (pointOfReturn.transform.position);
 	}
 
 
-	public void Fish() {
+	public void FishAnim() {
 		anim.CrossFade("New Animation",0.1f);
 	}
 
@@ -25,15 +25,21 @@ public class Kalasta : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetButtonDown ("Fire1")) {
-			Fish ();
+			FishAnim ();
 
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			RaycastHit hit;
 			Physics.Raycast (ray, out hit);
 			Vector3 targetPoint = hit.point;
 			if (targetPoint != Vector3.zero) {
-				if (targetPoint.z > 1) {
-					koho.gogo (targetPoint);
+				if (going) {
+					if (targetPoint.z > 1) {
+						koho.Gogo (targetPoint);
+						going = !going;
+					}
+				} else {
+					koho.Return ();
+					going =!going;
 				}
 			}
 
