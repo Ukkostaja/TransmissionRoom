@@ -12,19 +12,23 @@ public class BoxTrigger : MonoBehaviour {
 		get { return threeObjectsTriggered; }
 		set { threeObjectsTriggered = value; }
 	}
+
 	// Use this for initialization
 	void Start () {
 	}
+
 	
 	// Update is called once per frame
 	void Update () {
-
+		
 	}
 
 	void OnTriggerEnter(Collider col) {
 		if (col.gameObject.tag == "CubeBoxCube") objectsTriggered++;
 
-		if(IsThreeObjectsTriggered () ) Debug.Log ("Kolme!");
+		if (IsThreeObjectsTriggered ()) {
+			UniversalState.MiniGame3Solved = 1;
+		}
 	}
 
 	bool IsThreeObjectsTriggered(){
