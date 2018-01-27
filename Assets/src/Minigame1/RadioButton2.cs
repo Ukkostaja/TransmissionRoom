@@ -17,10 +17,12 @@ public class RadioButton2 : MonoBehaviour,Interactable {
 	}
 
 	public void Mouse1() {
+		gameObject.transform.RotateAround(gameObject.transform.position,Vector3.forward,1f);
 		RVT.Left ();
 	}
 
 	public void Mouse2() {
+		gameObject.transform.Rotate(-1,1,0);
 		RVT.Right ();
 	}
 
