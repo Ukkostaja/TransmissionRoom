@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RadioButton2 : MonoBehaviour,Interactable {
 
-
+	public float Step;
 	RadioVisualTuning RVT;
 	// Use this for initialization
 	void Start () {
@@ -17,11 +17,16 @@ public class RadioButton2 : MonoBehaviour,Interactable {
 	}
 
 	public void Mouse1() {
-		RVT.Left ();
+		if (RVT.Left ()) {
+			gameObject.transform.Rotate (Vector3.right * Step, Space.Self);
+		}
+
 	}
 
 	public void Mouse2() {
-		RVT.Right ();
+		if (RVT.Right ()) {
+			gameObject.transform.Rotate (Vector3.left * Step, Space.Self);
+		}
 	}
 
 }

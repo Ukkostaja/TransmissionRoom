@@ -18,12 +18,13 @@ public class BoxTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
 
 	void OnTriggerEnter(Collider col) {
 		if (col.gameObject.tag == "CubeBoxCube") objectsTriggered++;
-		IsThreeObjectsTriggered ();
+
+		if(IsThreeObjectsTriggered () ) Debug.Log ("Kolme!");
 	}
 
 	bool IsThreeObjectsTriggered(){
