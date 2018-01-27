@@ -4,7 +4,37 @@ timeCreated: 1516996831
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: radio
+    100004: radio_button_1
+    100006: radio_button_2
+    100008: radio_needle
+    400000: //RootNode
+    400002: radio
+    400004: radio_button_1
+    400006: radio_button_2
+    400008: radio_needle
+    2100000: radio_button_1__radio_button_1_001
+    2100002: Material_001
+    2100004: radio_button_2__radio_button_2
+    2100006: radio_wood__radio_panel
+    2100008: radio_panel__radio_panel
+    2100010: speaker__speaker
+    2300000: radio
+    2300002: radio_button_1
+    2300004: radio_button_2
+    2300006: radio_needle
+    3300000: radio
+    3300002: radio_button_1
+    3300004: radio_button_2
+    3300006: radio_needle
+    4300000: radio_button_1
+    4300002: radio_needle
+    4300004: radio_button_2
+    4300006: radio
+    7400000: Default Take
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
