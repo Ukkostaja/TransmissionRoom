@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -116,10 +116,6 @@ NavMeshSettings:
 --- !u!1 &88214504 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 8a461c34b1708c4469d94bae65d7fe2f, type: 3}
-  m_PrefabInternal: {fileID: 951770567}
---- !u!4 &88214508 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 8a461c34b1708c4469d94bae65d7fe2f, type: 3}
   m_PrefabInternal: {fileID: 951770567}
 --- !u!64 &88214509
 MeshCollider:
@@ -366,6 +362,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af0503c90463e274dbef60a2db8cf6a0, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &431411780 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 431411779}
 --- !u!1 &610754764 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 149790, guid: 7737647c22c1fc64a88d5cd030c352ce, type: 2}
@@ -465,6 +465,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a461c34b1708c4469d94bae65d7fe2f, type: 3}
   m_IsPrefabParent: 0
+--- !u!4 &951770568 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 951770567}
 --- !u!1 &1020205381
 GameObject:
   m_ObjectHideFlags: 0
@@ -727,9 +731,9 @@ Transform:
   m_LocalPosition: {x: -3.8760405, y: -2.052854, z: 5.211029}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1691095943}
+  - {fileID: 431411780}
   - {fileID: 1936539089}
-  - {fileID: 88214508}
+  - {fileID: 951770568}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -904,10 +908,6 @@ MeshFilter:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: af0503c90463e274dbef60a2db8cf6a0, type: 3}
   m_PrefabInternal: {fileID: 431411779}
---- !u!4 &1691095943 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: af0503c90463e274dbef60a2db8cf6a0, type: 3}
-  m_PrefabInternal: {fileID: 431411779}
 --- !u!114 &1691095944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1021,7 +1021,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17c935fc8985a74481c77741929adb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 3
+  id: 4
   available: 1
 --- !u!1001 &2050416718
 Prefab:
