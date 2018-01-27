@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class RadioButton1 : MonoBehaviour,Interactable {
 
+
+	public float volume = 50f;
+	public float visualStep = 2;
+	public float volumeStep= 1;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -16,10 +21,19 @@ public class RadioButton1 : MonoBehaviour,Interactable {
 
 
 	public void Mouse1() {
-		Debug.Log("Ping");
+		if ((volume -= volumeStep) > 0f) {
+			gameObject.transform.Rotate (Vector3.right * visualStep, Space.Self);
+		} else {
+			volume = 0f;
+		}
 	}
 
 	public void Mouse2() {
-		Debug.Log("Pong");
+		if ((volume += volumeStep) < 100f) {
+			gameObject.transform.Rotate (Vector3.left * visualStep, Space.Self);
+		} else {
+			volume = 100f;
+		}
+
 	}
 }

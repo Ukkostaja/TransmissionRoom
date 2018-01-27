@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Interactable
+  - CubeBoxCube
+  - Puzzle2Mirror
+  - Puzzle2Block
   layers:
   - Default
   - TransparentFX

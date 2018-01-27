@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 376423195}
   - component: {fileID: 376423194}
   - component: {fileID: 376423193}
-  - component: {fileID: 376423197}
+  - component: {fileID: 376423198}
   m_Layer: 0
   m_Name: DraggableTrigger
   m_TagString: Untagged
@@ -652,7 +652,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &376423197
+--- !u!114 &376423198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 376423192}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1633e68e8157bc2458ecb9d6ffd6d076, type: 3}
+  m_Script: {fileID: 11500000, guid: bcc52f46fb3bb894d8d059f7438d99c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &390085136
@@ -1757,7 +1757,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1661383825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.59000003, y: -3, z: 8.559999}
+  m_LocalPosition: {x: -2.17, y: -3, z: 8.559999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 566529912}
