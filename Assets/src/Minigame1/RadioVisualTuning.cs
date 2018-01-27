@@ -16,14 +16,12 @@ public class RadioVisualTuning : MonoBehaviour {
 	}
 
 	public void Left() {
-		if (RadioNeedle.transform.localPosition.z - StepLegnth < LeftBound.transform.localPosition.z) {
+		if (RadioNeedle.transform.localPosition.z + StepLegnth < LeftBound.transform.localPosition.z) {
 			Vector3 newPos= RadioNeedle.transform.localPosition;
-			newPos.z -= StepLegnth;
+			newPos.z += StepLegnth;
 			RadioNeedle.transform.localPosition = newPos;
 			Tune ();
 		}
-
-
 
 	}
 
@@ -34,9 +32,9 @@ public class RadioVisualTuning : MonoBehaviour {
 
 
 	public void Right() {
-		if (RadioNeedle.transform.localPosition.z + StepLegnth > RightBound.transform.localPosition.z) {
+		if (RadioNeedle.transform.localPosition.z - StepLegnth > RightBound.transform.localPosition.z) {
 			Vector3 newPos= RadioNeedle.transform.localPosition;
-			newPos.z += StepLegnth;
+			newPos.z -= StepLegnth;
 			RadioNeedle.transform.localPosition = newPos;
 			Tune ();
 		}
