@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MirrorObjectDrag : MonoBehaviour {
+public class ObjectDrag : MonoBehaviour {
 
 	Vector3 dragObjectPosition;
 	Vector3 mousePosition;
@@ -13,7 +13,7 @@ public class MirrorObjectDrag : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		offset = 10f;
+		if (offset == 0) dragheight = offset = 10f;
 		dragObjectPosition = transform.position;
 		if (dragheight == 0) dragheight = dragObjectPosition.y;
 	}
@@ -21,7 +21,6 @@ public class MirrorObjectDrag : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-		transform.position = dragObjectPosition;
 		offsetVector = mousePosition - dragObjectPosition;
 
 	}
@@ -30,7 +29,6 @@ public class MirrorObjectDrag : MonoBehaviour {
 	{
 		if (Mathf.Abs(offsetVector.x) < offset && Mathf.Abs(offsetVector.y) < offset && Mathf.Abs(offsetVector.z) < offset)
 		{
-			mousePosition = dragObjectPosition;
 			transform.position = new Vector3(mousePosition.x, dragheight, mousePosition.z);
 			dragObjectPosition = transform.position;
 		}

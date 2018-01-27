@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoxCubeBox : MonoBehaviour {
+public class CubeBoxCube : MonoBehaviour {
 
 	Vector3 cubePosition;
 	Vector3 mousePosition;
@@ -30,17 +30,19 @@ public class BoxCubeBox : MonoBehaviour {
 	{
 		if (Mathf.Abs(offsetVector.x) < offset && Mathf.Abs(offsetVector.x) < offset && Mathf.Abs(offsetVector.x) < offset)
 		{
-			transform.position = new Vector3(mousePosition.x, dragheight, mousePosition.z);
+			cubePosition = mousePosition;
+			transform.position = new Vector3(cubePosition.x, dragheight, cubePosition.z);
 		}
 	}
 
 	void OnMouseDrag()
 	{
-		transform.position = new Vector3 (mousePosition.x, dragheight, mousePosition.z);
+		cubePosition = mousePosition;
+		transform.position = new Vector3 (cubePosition.x, dragheight, cubePosition.z);
 	}
 
 	void OnMouseUp()
 	{
-		transform.position = new Vector3 (mousePosition.x, dragheight, mousePosition.z);
+		transform.position = new Vector3 (cubePosition.x, dragheight, cubePosition.z);
 	}
 }
