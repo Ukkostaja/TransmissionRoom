@@ -5,11 +5,8 @@ using UnityEngine;
 public class SceneID : MonoBehaviour {
 
 	public int id;
+	public bool enabled;
 
-
-	public SceneID(int id) {
-		this.id = id;
-	}
 
 	// Use this for initialization
 	void Start () {

@@ -12,7 +12,7 @@ public class MyInput : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		bool notagain = false;
+		notagain = false;
 		delay = Time.realtimeSinceStartup;
 	}
 	
@@ -38,7 +38,7 @@ public class MyInput : MonoBehaviour {
 
 			//Debug.Log (distance);
 
-			if (distance < 3) {
+			if ((distance < 3) && winner.available) {
 				SceneManager.LoadScene (winner.id);
 			}
 		}
