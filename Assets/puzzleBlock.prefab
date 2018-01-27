@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 65092066099841126}
   - component: {fileID: 23989150464378528}
   - component: {fileID: 54454141433014602}
+  - component: {fileID: 114319273715074394}
   m_Layer: 0
   m_Name: puzzleBlock
-  m_TagString: Puzzle2Mirror
+  m_TagString: Puzzle2Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,3 +112,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114319273715074394
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854260746084458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c35629e5fa99e749b8e5939ef3584dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
