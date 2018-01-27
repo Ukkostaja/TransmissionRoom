@@ -1,49 +1,56 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 4cfc96d9ba0a3de42a5f710b952b7821
-timeCreated: 1517073647
-=======
-guid: 622ea96b957148c43b99baa9d132f3fc
-timeCreated: 1517074208
->>>>>>> df5825484f8560ff72d1123cb403142c4f965842
+guid: 266829ab1057b434ba50aa07e8e4f888
+timeCreated: 1485080024
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Cylinder
+    100004: Sphere
+    100006: blimp
+    100008: blimp_ball
     400000: //RootNode
-    2100000: rod
+    400002: Cylinder
+    400004: Sphere
+    400006: blimp
+    400008: blimp_ball
     2300000: //RootNode
+    2300002: Cylinder
+    2300004: Sphere
+    2300006: blimp
+    2300008: blimp_ball
     3300000: //RootNode
-    4300000: rod
+    3300002: Cylinder
+    3300004: Sphere
+    3300006: blimp
+    3300008: blimp_ball
+    4300000: Cylinder
+    4300002: Sphere
+    4300004: blimp
+    4300006: blimp_ball
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -51,18 +58,13 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
-    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -72,7 +74,6 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
