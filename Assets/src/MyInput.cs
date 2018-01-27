@@ -36,11 +36,12 @@ public class MyInput : MonoBehaviour {
 			}
 
 
-			//Debug.Log (distance);
+//			Debug.Log (winnerdistance);
 
-			if ((distance < 3) && winner.available) {
+			if ((winnerdistance < 3) && winner.available) {
 				SceneManager.LoadScene (winner.id);
 			}
+
 		}
 
 		if (Time.realtimeSinceStartup - delay > waittime) {
