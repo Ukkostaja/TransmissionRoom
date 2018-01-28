@@ -18,7 +18,10 @@ public class GameStateCheck : MonoBehaviour {
 		else
 			gameFinished = false;
 
-		if (gameFinished = true) 
+		if (gameFinished == true) 
 				Application.Quit ();
+
+		if (Input.GetKey (KeyCode.Escape))
+			Application.Quit ();
 	}
 }
