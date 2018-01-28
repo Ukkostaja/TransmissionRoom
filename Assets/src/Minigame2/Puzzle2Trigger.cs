@@ -7,7 +7,7 @@ public class Puzzle2Trigger : MonoBehaviour {
 	GameObject[] allChildTriggers;
 	public AudioSource soundi;
 	int triggered = 0;
-	int boxesToBeTossed = 7;
+	int boxesToBeTossed = 30;
 	// Use this for initialization
 	void Start () {
 		allChildTriggers = GameObject.FindGameObjectsWithTag ("Puzzle2Trigger");
@@ -54,7 +54,7 @@ public class Puzzle2Trigger : MonoBehaviour {
 	}
 
 	bool IsConditionsMet() {
-			if (triggered == 7 || boxesToBeTossed == -10) return true;
+			if (triggered == 7 || boxesToBeTossed >= 10) return true;
 			else return false;
 	}
 }

@@ -22,7 +22,7 @@ public class GameStart : MonoBehaviour {
 	void Update () {
 		if (Home != null) {
 			if (Vector3.Distance (gameObject.transform.position, Home.transform.position) > 20f) {
-				SceneManager.LoadScene (0);
+				SceneManager.LoadScene (1);
 			
 			}
 		}

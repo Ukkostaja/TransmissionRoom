@@ -1,11 +1,24 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\src\Minigame6\Bot.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\src\Minigame6\GameStart.cs">
     <Files>
-      <File FileName="Assets\src\Minigame6\Scoring.cs" Line="19" Column="34" />
-      <File FileName="Assets\src\Minigame6\FlipForce.cs" Line="11" Column="45" />
-      <File FileName="Assets\src\Minigame6\PlayerInput.cs" Line="20" Column="67" />
-      <File FileName="Assets\src\Minigame6\Bot.cs" Line="28" Column="16" />
+      <File FileName="Assets\src\Minigame1\RadioButton2.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\Minigame1\RadioButton1.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\MyInput.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\PointAndClick.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\Minigame1\getUrl.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\Minigame1\bassstream.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\GoBackToHub.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\ViewMouse.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\Minigame6\Bot.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\Minigame6\PlayerInput.cs" Line="11" Column="22" />
+      <File FileName="Assets\src\GameStateCheck.cs" Line="27" Column="4" />
+      <File FileName="Assets\src\UniversalState.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\Minigame6\Scoring.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\Minigame3\BoxTrigger.cs" Line="34" Column="1" />
+      <File FileName="Assets\src\Minigame2\Puzzle2Trigger.cs" Line="10" Column="27" />
+      <File FileName="Assets\src\Minigame6\MyAudio.cs" Line="1" Column="1" />
+      <File FileName="Assets\src\Minigame6\GameStart.cs" Line="9" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameStateCheck : MonoBehaviour {
 
@@ -18,10 +19,12 @@ public class GameStateCheck : MonoBehaviour {
 		else
 			gameFinished = false;
 
-		if (gameFinished == true) 
-				//play sound, goto end screen
-				Application.Quit ();
-
+		if (gameFinished == true) {
+			//play sound, goto end screen
+			bassstream.BASS_StreamFree (0);
+			bassstream.BASS_Free ();
+			SceneManager.LoadScene (8);
+		}
 		if (Input.GetKey (KeyCode.Escape))
 			Application.Quit ();
 	}

@@ -6,7 +6,9 @@ public class PlayerInput : MonoBehaviour {
 
 	public float MouseSpeed;
 	public MyAudio soundii;
+	public AudioSource soundi;
 	float lastScoreUpdate = 0;
+	bool played = false;
 
 	int playerScore;
 
@@ -31,9 +33,14 @@ public class PlayerInput : MonoBehaviour {
 		newPos.y = Camera.main.ScreenToWorldPoint(Input.mousePosition).y;
 		transform.position = newPos;
 
+
 		if (Time.timeSinceLevelLoad > lastScoreUpdate + 1) {
 			lastScoreUpdate = Time.timeSinceLevelLoad;
 			UniversalState.MiniGame6Solved = int.Parse (omascore.scoreBoard.text);
+			if (UniversalState.MiniGame6Solved != 0 && !played) {
+				soundi.Play ();
+				played = true;
+			}
 		}
 	}
 }
