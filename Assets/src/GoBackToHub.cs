@@ -13,11 +13,11 @@ public class GoBackToHub : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.E)) {
-			bassstream.BASS_StreamFree(0);
-			bassstream.BASS_Free();
-			GameObject me = this.gameObject;
-			SceneID winner = this.GetComponent<SceneID>();
-			SceneManager.LoadScene (winner.id);
+			if (bassstream != null) {
+				bassstream.BASS_StreamFree (0);
+				bassstream.BASS_Free ();
+			}
+			SceneManager.LoadScene (0);
 		}
 	}
 }
