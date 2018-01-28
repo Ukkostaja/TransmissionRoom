@@ -7,7 +7,7 @@ public class RadioButton2 : MonoBehaviour,Interactable {
 	public float Step;
 	RadioVisualTuning RVT;
 	public static AudioSource audio;
-	bool touched;
+	public static bool touched;
 
 	// Use this for initialization
 	void Start () {
@@ -22,7 +22,7 @@ public class RadioButton2 : MonoBehaviour,Interactable {
 			//lopeta kohina
 
 			bassstream.Play ();
-
+			bassstream.BASS_SetConfig (bassstream.configs.BASS_CONFIG_GVOL_STREAM, Mathf.RoundToInt (RadioButton1.volume * 100.0f));
 			touched = false;
 		}
 	}
@@ -36,6 +36,7 @@ public class RadioButton2 : MonoBehaviour,Interactable {
 				if (!audio.isPlaying) {
 					Debug.Log ("Kohise");
 					audio.Play();
+					touched = false;
 				}
 			}
 		}
@@ -49,6 +50,7 @@ public class RadioButton2 : MonoBehaviour,Interactable {
 			if (!audio.isPlaying) {
 				Debug.Log ("Kohise");
 				audio.Play();
+				touched = false;
 			}
 		}
 	}

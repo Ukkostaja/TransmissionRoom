@@ -5,7 +5,7 @@ using UnityEngine;
 public class RadioButton1 : MonoBehaviour,Interactable {
 
 
-	public float volume = 50f;
+	public static float volume = 50f;
 	public float visualStep = 2;
 	public float volumeStep= 1;
 //	public AudioSource radiovol;

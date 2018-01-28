@@ -77,10 +77,12 @@ public class bassstream : MonoBehaviour {
 				BASS_ChannelPlay (stream, false);
 				Debug.Log("play");
 				Debug.Log ("URL = " + streamurl);
+				RadioButton2.touched = false;
 			}
 			else {
 				Debug.Log ("stream = 0");
 				Debug.Log ("URL = " + streamurl);
+				RadioButton2.touched = false;
 			}
 		}
 	}
