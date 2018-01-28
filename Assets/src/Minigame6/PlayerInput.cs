@@ -6,10 +6,16 @@ public class PlayerInput : MonoBehaviour {
 
 	public float MouseSpeed;
 	public MyAudio soundii;
+	float lastScoreUpdate = 0;
+
+	int playerScore;
+
+	Scoring omascore;
 
 	// Use this for initialization
 	void Start () {
-		
+		omascore = GetComponentInChildren<Scoring> ();
+
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
@@ -24,5 +30,10 @@ public class PlayerInput : MonoBehaviour {
 		Vector3 newPos = transform.position;
 		newPos.y = Camera.main.ScreenToWorldPoint(Input.mousePosition).y;
 		transform.position = newPos;
+
+		if (Time.timeSinceLevelLoad > lastScoreUpdate + 1) {
+			lastScoreUpdate = Time.timeSinceLevelLoad;
+			UniversalState.MiniGame6Solved = int.Parse (omascore.scoreBoard.text);
+		}
 	}
 }
