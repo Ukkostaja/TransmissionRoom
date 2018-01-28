@@ -36,7 +36,7 @@ public class MyInput : MonoBehaviour {
 			}
 
 
-//			Debug.Log (winnerdistance);
+			Debug.Log (winnerdistance);
 
 			if ((winnerdistance < 3) && winner.available) {
 				SceneManager.LoadScene (winner.id);
