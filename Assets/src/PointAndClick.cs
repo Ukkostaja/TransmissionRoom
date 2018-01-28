@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PointAndClick : MonoBehaviour {
 
@@ -8,7 +9,8 @@ public class PointAndClick : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.None;
 	}
 	
 	// Update is called once per frame
@@ -18,6 +20,7 @@ public class PointAndClick : MonoBehaviour {
 
 		if (fireOnce) {
 
+			//aloita kohina
 			if (Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Fire2")) {
 				Physics.Raycast (ray, out hit);
 				//Debug.Log ("Hit");
@@ -25,6 +28,7 @@ public class PointAndClick : MonoBehaviour {
 				Interactable kohde = hit.collider.gameObject.GetComponent<Interactable> ();
 				//Debug.Log (kohde);
 				if (kohde != null) {
+					//kohina start
 					if (Input.GetButtonDown ("Fire1")) {
 						kohde.Mouse1 ();
 					}
@@ -32,8 +36,6 @@ public class PointAndClick : MonoBehaviour {
 						kohde.Mouse2 ();
 					}
 				}
-				//}
-
 			}
 		} else {
 			//Copypastekoodia :(

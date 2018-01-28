@@ -24,9 +24,9 @@ public class Kalasta : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("Fire1") && !koho.Active) { // kun painetaan jonnekin ja koho ei ole liikkeessä
+		if (Input.GetButtonDown("Fire1") && !koho.PActive) { // kun painetaan jonnekin ja koho ei ole liikkeessä
 			FishAnim ();											//animoidaan vapa
-			Debug.Log(koho.Active);
+			Debug.Log(koho.PActive);
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			RaycastHit hit;
 			Physics.Raycast (ray, out hit); // etsitään osuttiinko veteen

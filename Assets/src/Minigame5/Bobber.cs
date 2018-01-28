@@ -5,16 +5,16 @@ using UnityEngine;
 public class Bobber : MonoBehaviour {
 
 	public float speed;
-	public Vector3 target;
+	public Vector3 goTo;
 	Vector3 pore;
 	Vector3 liikevektori;
-	bool active;
-	public bool Active {
+	bool pactive;
+	public bool PActive {
 		get {
-			return active;
+			return pactive;
 		}
 		set {
-			this.active = value;
+			this.pactive = value;
 			Debug.Log("I have been set to:"+ value);
 
 		}
@@ -34,17 +34,19 @@ public class Bobber : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Active) {
+		if (PActive) {
 			Vector3 newPos = transform.position + (liikevektori * speed);
 			transform.position = newPos;
 			//Vector3 distance = transform.position - target;
-			if (transform.position.y < 0) {
+			if (transform.position.y < 0f) {
+				Debug.Log ("I have arrived");
+
 				Decay[] targets = fs.GetComponentsInChildren<Decay> ();
 				Vector3 pos;
 				foreach (Decay cs in targets) {
 					pos = cs.transform.position;
 					float distance = Vector3.Distance (pos, transform.position);
-					Debug.Log ("distance:"+distance);
+					//Debug.Log ("distance:"+distance);
 					if (distance < catchDistance) {
 						int catchPicID = Random.Range (0, fs.catches.Length);
 						mySprite.sprite = fs.catches [catchPicID];
@@ -53,13 +55,13 @@ public class Bobber : MonoBehaviour {
 						
 					}
 				}
-				Active = false;
+				//PActive = false;
 			}
 
 				
 			if (transform.position.z < pore.z) {
 				mySprite.sprite = null;
-				Active = false;
+				//PActive = false;
 			}
 			
 		}
@@ -73,10 +75,10 @@ public class Bobber : MonoBehaviour {
 
 
 	public void Gogo(Vector3 pos) {
-		target = pos;
+		goTo = pos;
 		liikevektori = (pos-gameObject.transform.position)/600;
 		Debug.Log ("Activate");
-		Active = true;
+		PActive = true;
 	}
 
 	public void setPOR(Vector3 POS) {

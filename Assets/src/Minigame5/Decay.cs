@@ -21,6 +21,8 @@ public class Decay : MonoBehaviour {
 	}
 
 	public void Cauth() {
+		Debug.Log ("Caught Something!");
 		Destroy (gameObject);
+
 	}
 }

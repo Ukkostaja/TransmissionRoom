@@ -27,7 +27,7 @@ public class FishSpawner : MonoBehaviour {
 	void Spawn () {
 		float x = Random.value -0.5f;
 		float z = Random.value -0.5f;
-		Debug.Log (x + " , " + z);
+		//Debug.Log (x + " , " + z);
 		Vector3 pos = new Vector3 (transform.position.x + x * AreaScale, 0f,transform.position.z + z * AreaScale);
 		GameObject.Instantiate (prefab, pos, transform.rotation, transform);
 		Transform madness = transform.transform.transform.transform.transform.transform.transform.transform;
