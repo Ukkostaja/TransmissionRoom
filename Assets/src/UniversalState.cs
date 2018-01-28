@@ -11,7 +11,7 @@ public static class UniversalState{
 
 	// variables for storing game states //
 
-	private static int miniGame1Solved = 0;
+	private static int miniGame1Solved = 1;
 	public static int MiniGame1Solved{
 		get { return miniGame1Solved; }
 		set { miniGame1Solved = value; }
@@ -29,13 +29,7 @@ public static class UniversalState{
 		set { miniGame3Solved = value;}
 	}
 
-	private static int miniGame4Solved = 0;
-	public static int MiniGame4Solved{
-		get { return miniGame4Solved; }
-		set { miniGame4Solved = value; }
-	} 
-
-	private static int miniGame5Solved = 0;
+	private static int miniGame5Solved = 1;
 	public static int MiniGame5Solved{
 		get { return miniGame5Solved; }
 		set { miniGame5Solved = value; }
