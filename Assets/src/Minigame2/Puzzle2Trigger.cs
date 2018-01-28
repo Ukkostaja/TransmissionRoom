@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Puzzle2Trigger : MonoBehaviour {
 	GameObject[] allChildTriggers;
+	public AudioSource soundi;
 	int triggered = 0;
 	int boxesToBeTossed = 7;
 	// Use this for initialization
@@ -17,6 +19,11 @@ public class Puzzle2Trigger : MonoBehaviour {
 		if (IsConditionsMet ()) {
 			Debug.Log("läpi") ;
 			UniversalState.MiniGame2Solved = 1;
+			//play sound
+			soundi.Play();
+			bassstream.BASS_StreamFree (0);
+			bassstream.BASS_Free ();
+			SceneManager.LoadScene (1);
 		}
 	}
 

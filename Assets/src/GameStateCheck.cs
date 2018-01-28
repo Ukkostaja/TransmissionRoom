@@ -19,6 +19,7 @@ public class GameStateCheck : MonoBehaviour {
 			gameFinished = false;
 
 		if (gameFinished == true) 
+				//play sound, goto end screen
 				Application.Quit ();
 
 		if (Input.GetKey (KeyCode.Escape))
