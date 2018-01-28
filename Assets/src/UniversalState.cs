@@ -47,9 +47,5 @@ public static class UniversalState{
 		set { miniGame6Solved = value; }
 	} 
 
-	private List<int> miniGameSolvedList;
-	public static List<int> MiniGameSolvedList {
-		get { return miniGame1Solved; }
-		set { miniGame1Solved = value; }
-	}
+
 }
