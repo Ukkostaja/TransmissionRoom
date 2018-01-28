@@ -18,6 +18,7 @@ public class PointAndClick : MonoBehaviour {
 
 		if (fireOnce) {
 
+			//aloita kohina
 			if (Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Fire2")) {
 				Physics.Raycast (ray, out hit);
 				//Debug.Log ("Hit");
@@ -25,6 +26,7 @@ public class PointAndClick : MonoBehaviour {
 				Interactable kohde = hit.collider.gameObject.GetComponent<Interactable> ();
 				//Debug.Log (kohde);
 				if (kohde != null) {
+					//kohina start
 					if (Input.GetButtonDown ("Fire1")) {
 						kohde.Mouse1 ();
 					}
@@ -32,8 +34,6 @@ public class PointAndClick : MonoBehaviour {
 						kohde.Mouse2 ();
 					}
 				}
-				//}
-
 			}
 		} else {
 			//Copypastekoodia :(

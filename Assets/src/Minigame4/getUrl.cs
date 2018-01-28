@@ -43,7 +43,7 @@ public class getUrl : MonoBehaviour {
 
 		//send found channels to player
 		bassstream.json = jsonobj;
-		bassstream.Play ();
+		//bassstream.Play ();
 
 		//play the first channel
 		//bassstream.Play(jsonobj[0][0][10][0][0]);

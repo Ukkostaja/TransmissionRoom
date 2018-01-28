@@ -28,8 +28,8 @@ public class bassstream : MonoBehaviour {
 
 	public enum configs {
 
-		BASS_CONFIG_NET_PLAYLIST=21
-
+		BASS_CONFIG_NET_PLAYLIST=21,
+		BASS_CONFIG_GVOL_STREAM=5
 	}
 
 	[DllImport("bass")]
@@ -51,12 +51,15 @@ public class bassstream : MonoBehaviour {
 	[DllImport("bass")]
 	public static extern bool BASS_Free();
 
+	[DllImport("bass")]
+	public static extern bool BASS_SetVolume(float volume);
 
 
 	// Use this for initialization
 	public static void Play () {
-		
-		 
+		BASS_StreamFree (stream);
+		BASS_Free ();
+
 		randomfloat = Random.Range(0, 19);
 		randomchannel = Mathf.RoundToInt (randomfloat);
 		streamurl = json [0] [randomchannel] [10] [0] [0];
@@ -65,9 +68,16 @@ public class bassstream : MonoBehaviour {
 		{
 			BASS_SetConfig(configs.BASS_CONFIG_NET_PLAYLIST,2);
 			stream = BASS_StreamCreateURL(streamurl, 0, flags.BASS_DEFAULT, IntPtr.Zero, IntPtr.Zero);
+//			BASS_SetVolume (0.5f);
+//			BASS_SetConfig (configs.BASS_CONFIG_GVOL_STREAM, Mathf.RoundToInt (0.5f * 10000));
 
-			if (stream != 0)
+
+			if (stream != 0) {
+				RadioButton2.audio.Stop();
 				BASS_ChannelPlay (stream, false);
+				Debug.Log("play");
+				Debug.Log ("URL = " + streamurl);
+			}
 			else {
 				Debug.Log ("stream = 0");
 				Debug.Log ("URL = " + streamurl);
@@ -79,11 +89,7 @@ public class bassstream : MonoBehaviour {
 	//TEMPORARY
 	//MOVE
 	void Update () {
-		if (Input.GetKey (KeyCode.E)) {
-			BASS_StreamFree (stream);
-			BASS_Free ();
-			Play ();
-		}
+
 	}
 	//stop the audio
 	void OnApplicationQuit()
