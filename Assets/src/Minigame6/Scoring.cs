@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Scoring : MonoBehaviour {
 
+	public MyAudio soundii;
 	public Text scoreBoard;
 
 	// Use this for initialization
@@ -17,6 +18,9 @@ public class Scoring : MonoBehaviour {
 			int i = int.Parse (scoreBoard.text);
 			i++;
 			scoreBoard.text = i.ToString();
+			if (soundii != null) {
+				soundii.Play (3);
+			}
 		}
 	}
 

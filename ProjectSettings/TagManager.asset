@@ -8,6 +8,7 @@ TagManager:
   - CubeBoxCube
   - Puzzle2Mirror
   - Puzzle2Block
+  - Puzzle2Trigger
   layers:
   - Default
   - TransparentFX
