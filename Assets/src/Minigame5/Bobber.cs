@@ -40,7 +40,6 @@ public class Bobber : MonoBehaviour {
 			//Vector3 distance = transform.position - target;
 			if (transform.position.y < 0f) {
 				Debug.Log ("I have arrived");
-
 				Decay[] targets = fs.GetComponentsInChildren<Decay> ();
 				Vector3 pos;
 				foreach (Decay cs in targets) {
@@ -55,13 +54,13 @@ public class Bobber : MonoBehaviour {
 						
 					}
 				}
-				//PActive = false;
+				PActive = false;
 			}
 
 				
 			if (transform.position.z < pore.z) {
 				mySprite.sprite = null;
-				//PActive = false;
+				PActive = false;
 			}
 			
 		}

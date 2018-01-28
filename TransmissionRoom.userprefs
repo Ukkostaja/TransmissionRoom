@@ -1,17 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\src\Minigame5\Bobber.cs">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\src\Minigame4\bassstream.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\src\Minigame5\Kalasta.cs">
     <Files>
-      <File FileName="Assets\src\Minigame5\Kalasta.cs" Line="27" Column="26" />
-      <File FileName="Assets\src\Minigame5\Bobber.cs" Line="37" Column="16" />
-      <File FileName="Assets\src\Minigame5\FishSpawner.cs" Line="11" Column="15" />
+      <File FileName="Assets\src\Minigame5\Kalasta.cs" Line="20" Column="28" />
+      <File FileName="Assets\src\Minigame5\Bobber.cs" Line="51" Column="1" />
+      <File FileName="Assets\src\Minigame5\FishSpawner.cs" Line="30" Column="5" />
+      <File FileName="Assets\src\Minigame5\Decay.cs" Line="24" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <RunToCursorBreakpoint file="C:\Users\Public\Documents\Unity Projects\TransmissionRoom\Assets\src\Minigame5\Bobber.cs" line="11" column="17" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

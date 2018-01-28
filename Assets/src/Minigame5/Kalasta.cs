@@ -6,6 +6,7 @@ public class Kalasta : MonoBehaviour {
 	Animator anim;
 	public GameObject pointOfReturn;
 	public Bobber koho;
+	public GameObject rotationComp;
 	bool canThrow= true;
 
 	// Use this for initialization
@@ -16,16 +17,23 @@ public class Kalasta : MonoBehaviour {
 	}
 
 
-	public void FishAnim() {
-		anim.CrossFade("New Animation",0.1f);
+	public bool FishAnim() {
+		float x = Quaternion.Angle (transform.rotation, rotationComp.transform.rotation);
+		Debug.Log (x);
+		if (x < 2f) {
+			
+			anim.CrossFade ("New Animation" ,1f);
+			return true;
+		}
+		return false;
 	}
 
 
 
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("Fire1") && !koho.PActive) { // kun painetaan jonnekin ja koho ei ole liikkeessä
-			FishAnim ();											//animoidaan vapa
+		if (Input.GetButtonDown("Fire1") && !koho.PActive && FishAnim()) { // kun painetaan jonnekin ja koho ei ole liikkeessä
+											//animoidaan vapa
 			Debug.Log(koho.PActive);
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			RaycastHit hit;
